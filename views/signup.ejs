@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Harmony AgroTech Solutions</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="farmName">Farm Name:</label>
+                <input type="text" id="farmName" name="farmName" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

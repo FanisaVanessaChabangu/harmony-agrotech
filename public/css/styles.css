@@ -1,0 +1,191 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff; /* Change green to white */
+    color: #000; /* Change text color to black */
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cta-buttons {
+    margin-top: 40px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #555;
+}
+
+/* Main Sections */
+.features,
+.benefits,
+.how-it-works {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features h3,
+.benefits h3,
+.how-it-works h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.animated-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.animated-section:hover img {
+    opacity: 1;
+}
+
+/* Benefits Section */
+.benefits img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* How It Works Section */
+.how-it-works img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        margin-top: 20px;
+    }
+
+    .features,
+    .benefits,
+    .how-it-works {
+        padding: 60px 10px;
+    }
+
+    .feature h4 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+
+    .feature p {
+        font-size: 1em;
+    }
+}

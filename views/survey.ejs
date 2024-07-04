@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Harmony AgroTech Solutions</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h2>Survey</h2>
+        <form action="/survey" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="farmName">Farm Name:</label>
+                <input type="text" id="farmName" name="farmName" required>
+            </div>
+            <div>
+                <label for="farmSize">Farm Size (in acres):</label>
+                <input type="number" id="farmSize" name="farmSize" required>
+            </div>
+            <div>
+                <label for="livestockTypes">Types of Livestock:</label>
+                <input type="text" id="livestockTypes" name="livestockTypes" required>
+            </div>
+            <div>
+                <label for="marketAccess">How do you currently access the market for your livestock?</label>
+                <textarea id="marketAccess" name="marketAccess" required></textarea>
+            </div>
+            <div>
+                <label for="challenges">What are the biggest challenges you face in selling your livestock?</label>
+                <textarea id="challenges" name="challenges" required></textarea>
+            </div>
+            <div>
+                <label for="marketDataUsage">Do you use market data to inform your pricing and sales decisions?</label>
+                <select id="marketDataUsage" name="marketDataUsage" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div>
+                <label for="technologyUsage">What technology tools do you currently use to manage your farm?</label>
+                <textarea id="technologyUsage" name="technologyUsage" required></textarea>
+            </div>
+            <div>
+                <label for="featuresInterest">Which features of our platform interest you the most?</label>
+                <textarea id="featuresInterest" name="featuresInterest" required></textarea>
+            </div>
+            <button type="submit">Submit Survey</button>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
